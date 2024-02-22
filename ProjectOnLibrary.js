@@ -1,5 +1,5 @@
 class Book {
-  constructor(title, author) {
+  constructor(title, author,) {
     this.title = title;
     this.author = author;
     this.available = true;
@@ -57,25 +57,25 @@ class Library {
   }
 }
 
-// Example usage:
+
 const library = new Library();
 
 // Adding books
-library.addBook("1984", "George Orwell");
-library.addBook("To Kill a Mockingbird", "Harper Lee");
-library.addBook("The Great Gatsby", "F. Scott Fitzgerald");
-
+library.addBook("Think and Grow Rich", "Napoleon Hill");
+library.addBook("Atomic Habits", "James Clair");
+library.addBook("The Digital Fortress", "Dan Brown");
+library.addBook("Long Eagle", "Anonymous");
 // Display available books
 library.displayAvailableBooks();
 
 // Borrowing a book
-library.borrowBook("1984");
+library.borrowBook("Atomic Habits");
 
 // Trying to borrow an unavailable book
-library.borrowBook("1984");
+library.borrowBook("Atomic Habits");
 
 // Returning a book
-library.returnBook("1984");
+library.returnBook("Atomic Habits");
 
 // Display available books after returning
 library.displayAvailableBooks();
